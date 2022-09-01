@@ -15,11 +15,25 @@
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src=""></script>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHLett8djBo62dDXj0EjCimF8Rd6E8cxg"
+    ></script>
     <script src="scripts/app.js"></script>
-    <title>GeoQuakes</title>
+    <title>Geo Quakes</title>
   </head>
   <body>
-    <h1>Earthquakes</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <div id="map"></div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div id="info">
+            <h1>Earthquakes from the past week:</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
