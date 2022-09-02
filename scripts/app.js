@@ -3,7 +3,6 @@ $(document).ready(function () {
 
 });
 
-const ul = document.getElementById("anchor");
 const list = document.createDocumentFragment();
 const url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
 
@@ -16,17 +15,23 @@ fetch(url)
     alert(commits.metadata.title);
     array_features.map(function(array_feature) {
       let li = document.createElement("li");
-      let place = document.createElement("h2");
-      let mag = document.createElement("h3");
-      let time = document.createElement("p");
+      let title = document.createElement("h2")
+      let place = document.createElement("li");
+      let time = document.createElement("li");
+      let status = document.createElement("p");
+      let link = document.createElement("a");
 
+      title.innerHTML = `${array_feature.properties.title}`;
       place.innerHTML = `${array_feature.properties.place}`;
-      mag.innerHTML = `${array_feature.properties.mag}`;
       time.innerHTML = `${array_feature.properties.time}`;
+      status.innerHTML = `${array_feature.properties.status}`;
+      link.innerHTML = `${array_feature.properties.url}`;
 
+      li.appendChild(title);
       li.appendChild(place);
-      li.appendChild(mag);
       li.appendChild(time);
+      li.appendChild(status);
+      li.appendChild(link);
       list.appendChild(li);
       document.getElementById("anchor").appendChild(list);
     });
