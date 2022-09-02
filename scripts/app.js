@@ -16,8 +16,8 @@ fetch(url)
     array_features.map(function(array_feature) {
       let li = document.createElement("li");
       let title = document.createElement("h2")
-      let place = document.createElement("li");
-      let time = document.createElement("li");
+      let place = document.createElement("h3");
+      let time = document.createElement("p");
       let status = document.createElement("p");
       let link = document.createElement("a");
 
