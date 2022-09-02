@@ -4,8 +4,6 @@
 
 Earthquake data from USGS
 
-Simple ~~AJAX~~ FetchAPI call to display data, also utilizes Google Maps API to embed a map
-
 - [USGS](http://www.earthquake.usgs.gov)
 - [Google Maps API](https://www.developers.google.com/maps/documentation/javascript/overview)
 
