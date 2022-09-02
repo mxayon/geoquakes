@@ -19,10 +19,6 @@ fetch(url)
       let status = document.createElement("p");
       let link = document.createElement("a");
       let hours_since = Math.round(( Date.now() - quake.properties.time ) / (60*60*1000));
-      // let hoursSince = originalTime.getHours();
-      // let minutesSince = "0" + originalTime.getMinutes();
-      // let secondsSince = "0" + originalTime.getSeconds();
-      // let formatTime = hoursSince + ":" + minutesSince.substr(-2) + ":" + secondsSince.substr(-2)
 
       title.innerHTML = `${quake.properties.title}`;
       place.innerHTML = `${quake.properties.place}`;
